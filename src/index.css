@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+.nav-link-color {
+    color: #666;
+}
+
+.link-hover {
+    color: #0ef;
+}
+
+@media (hover: hover) {
+    .hover {
+        @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-[#00C0FD] hover:to-[#E70FAA];
+    }
+}
+@media (hover: hover) {
+    .dark-hover {
+        @apply dark:hover:bg-clip-text dark:hover:text-transparent dark:hover:bg-gradient-to-r dark:hover:from-[#00C0FD] dark:hover:to-[#E70FAA];
+    }
+}
