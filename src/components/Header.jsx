@@ -23,7 +23,7 @@ const Header = () => {
     setDark(dark === 'dark' ? 'light' : 'dark');
   }
   return (
-    <div className='py-5'>
+    <div id='uy' className='pt-10 pb-20'>
       <div className='w-full max-w-[1440px] mx-auto px-5'>
         <div className='flex justify-between items-center'>
           <Link className='w-[100px] h-[100px] rounded-full bg-white' to={'/'}>
@@ -37,7 +37,7 @@ const Header = () => {
                 <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#ha">Haqida</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#te">Texnologik</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#te">Texnologa</a>
               </li>
               <li>
                 <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#lo">Loyihalar</a>
