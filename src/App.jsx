@@ -6,18 +6,11 @@ import Header from "./components/Header";
 
 
 export default function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route element={<ReactLayouts />}>
-        <Route path="/" element={<Hero />}/>
-        <Route path="/hea " element={<Header />}/>
-      </Route>
-    )
-  );
+
 
   return (
     <div>
-      <RouterProvider router={router} />
+      <ReactLayouts />
     </div>
   );
 }
