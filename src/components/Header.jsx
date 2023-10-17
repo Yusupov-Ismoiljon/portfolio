@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import tun from '../img/tun.png';
+import tun from '../img/tun-chirogi.png';
 import kun from '../img/day.png';
 
 
@@ -26,9 +26,10 @@ const Header = () => {
     <div id='uy' className='py-20'>
       <div className='w-full max-w-[1440px] mx-auto px-5'>
         <div className='flex justify-between items-center'>
-          <Link className='w-[100px] h-[100px] rounded-full bg-white' to={'/'}>
-          </Link>
-          <nav className='md:inline-block hidden'>
+          <a className='font-bold md:text-3xl text-2xl text-[#42446E] dark:text-white' href='#uy'>
+            <b>Ismoiljon <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#00C0FD] to-[#E70FAA]'>008</span></b>
+          </a>
+          <nav className='lg:inline-block hidden'>
             <ul className='flex items-center gap-10'>
               <li>
                 <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#uy">Uy</a>
@@ -45,22 +46,22 @@ const Header = () => {
             </ul>
           </nav>
           <div className='flex items-center dark:text-white gap-5'>
-            <a target='_blank' href='https://github.com/iyiy2008' className='inline-block text-black  dark:text-white'><i className="fa-brands fa-github fa-2xl"></i></a>
-            <a target='_blank' href='https://t.me/Ismoiljon_12_04' className='inline-block text-black dark:text-white'><i className="fa-brands fa-telegram fa-2xl"></i></a>
+            <a target='_blank' href='https://github.com/iyiy2008' className='inline-block text-black  dark:text-white'><i className="fa-brands fa-github fa-xl"></i></a>
+            <a target='_blank' href='https://t.me/Ismoiljon_12_04' className='inline-block text-black dark:text-white'><i className="fa-brands fa-telegram fa-xl"></i></a>
             <button onClick={addDark}>
               <img className='w-8 h-8' src={dark === 'light' ? kun : tun} alt="" />
             </button>
             <button onClick={() => setMenu(!menu)}>
-              <i className="fa-solid fa-bars md:hidden inline-block fa-xl"></i>
+              <i className="fa-solid fa-bars lg:hidden inline-block fa-xl"></i>
             </button>
-            <div className='md:hidden block'>
+            <div className='lg:hidden block'>
               {menu &&
                 <nav className='fixed w-full h-full top-0 right-0 bg-white dark:bg-black'>
                   <div className='relative'>
                     <button className='absolute top-9  right-5' onClick={() => setMenu(!menu)}>
-                      <i class="fa-solid fa-xmark fa-2xl" style={{ 'color': '#ff0000' }}></i>
+                      <i className="fa-solid fa-xmark fa-2xl" style={{ 'color': '#ff0000' }}></i>
                     </button>
-                    <ul onClick={()=> setMenu(!menu)} className='flex flex-col gap-10 absolute left-10 top-14'>
+                    <ul onClick={() => setMenu(!menu)} className='flex flex-col gap-10 absolute left-10 top-14'>
                       <li>
                         <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#uy">Uy</a>
                       </li>
