@@ -6,6 +6,19 @@
     scroll-behavior: smooth;
 }
 
+.hero-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    .hero-responsive {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .nav-link-color {
     color: #666;
 }
@@ -34,4 +47,8 @@
 
 .show {
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+}
+
+.hero-title .Typewriter__wrapper {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00C0FD] to-[#E70FAA]
 }
