@@ -1,54 +1,77 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap');
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-* {
-    scroll-behavior: smooth;
-}
+  * {
+      scroll-behavior: smooth;
+  }
 
-.hero-responsive {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+  body {
+      font-family: 'DM Sans', sans-serif;
+  }
 
-@media (max-width: 900px) {
-    .hero-responsive {
-        display: flex;
-        flex-direction: column;
-    }
-}
+  .hero-responsive {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
 
-.nav-link-color {
-    color: #666;
-}
+  @media (max-width: 900px) {
+      .hero-responsive {
+          display: flex;
+          flex-direction: column;
+      }
+  }
 
-.link-hover {
-    color: #0ef;
-}
+  .nav-link-color {
+      color: #666;
+  }
 
-@media (hover: hover) {
-    .hover {
-        @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-[#00C0FD] hover:to-[#E70FAA];
-    }
-}
+  .link-hover {
+      color: #0ef;
+  }
 
-@media (hover: hover) {
-    .dark-hover {
-        @apply dark:hover:bg-clip-text dark:hover:text-transparent dark:hover:bg-gradient-to-r dark:hover:from-[#00C0FD] dark:hover:to-[#E70FAA];
-    }
-}
+  @media (hover: hover) {
+      .hover {
+          @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-[#00C0FD] hover:to-[#E70FAA];
+      }
+  }
 
-@media (hover: hover) {
-    .li-img {
-        @apply bg-gradient-to-r from-[#00C0FD] to-[#E70FAA];
-    }
-}
+  @media (hover: hover) {
+      .dark-hover {
+          @apply dark:hover:bg-clip-text dark:hover:text-transparent dark:hover:bg-gradient-to-r dark:hover:from-[#00C0FD] dark:hover:to-[#E70FAA];
+      }
+  }
 
-.show {
-    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
-}
+  .li-img {
+      @apply bg-gradient-to-r from-[#00C0FD] to-[#E70FAA];
+  }
 
-.hero-title .Typewriter__wrapper {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00C0FD] to-[#E70FAA]
-}
+
+  .show {
+      box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+  }
+
+  .hero-title .Typewriter__wrapper {
+      @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00C0FD] to-[#E70FAA]
+  }
+
+  .brend {
+      @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00C0FD] to-[#E70FAA]
+  }
+
+  .circle-shape-style1 {
+      border: 2px solid #00eeff;
+      z-index: 1;
+  }
+
+  .circle-shape-style2 {
+      border: 2px solid #00ff88;
+      z-index: 1;
+  }
+
+  .circle-shape-style3 {
+      border: 2px solid #aa00ff;
+      z-index: 1;
+  }
