@@ -27,7 +27,7 @@ const Header = () => {
       <div className='w-full max-w-[1440px] mx-auto px-5'>
         <div className='flex justify-between items-center'>
           <a className='font-bold md:text-3xl text-2xl text-[#42446E] dark:text-white' href='#uy'>
-            <b>Ismoiljon <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#00C0FD] to-[#E70FAA]'>008</span></b>
+            <b>Ismoiljon </b>
           </a>
           <nav className='lg:inline-block hidden'>
             <ul className='flex items-center gap-10'>

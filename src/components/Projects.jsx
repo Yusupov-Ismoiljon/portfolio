@@ -1,5 +1,6 @@
 import React from 'react';
 import myteam from '../img/myteam.png'
+import { loyihalar } from '../data';
 
 const Projects = () => {
     return (
@@ -10,126 +11,41 @@ const Projects = () => {
                     <p className='font-normal text-lg md:text-2xl leading-6 text-[#666] dark:text-[#A7A7A7] text-center mb-28'>Men hazircha qilngan veb-saytlar</p>
                 </div>
                 <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
-                    <li className='bg-white dark:bg-[#363636] rounded-lg show'>
-                        <img className='rounded-t-lg' src={myteam} alt="" />
-                        <div className='dark:text-white p-5'>
-                            <h3 className='font-medium text-2xl mb-2'>Loyihaning nami - MyTeam</h3>
-                            <p className='font-medium text-lg mb-2'>Ushbu sayt 'Utrujja team' jamoasi haqida ma'lumot beradi. Sayt Css amaliyotda qo'llash va yaxshiroq o'rganish maqsadida test loyiha sifatida qilingan.</p>
-                            <p><span className='font-medium text-lg text-green-600'>Loyiha tuzilgan vaqti: </span>
-                                27-fevral 2023-yil
-                            </p>
-                            <p><span className='font-medium text-lg text-green-600'>Sahifa: </span>
-                                3
-                            </p>
-                            <p className='mb-5'><span className='font-medium text-lg text-green-600'>Texnologiyalar: </span>
-                                HTML, CSS
-                            </p>
-                            <div className='flex justify-between items-center'>
-                                <a target='_blank' className='inline-block' href="https://elegant-rabanadas-2f70b5.netlify.app/"><i className="fa-solid fa-link fa-lg"></i><span className='text-xl'> veb-sayt</span></a>
-                                <a target='_blank' className='inline-block' href="https://github.com/iyiy2008/myteam"><i className="fa-brands fa-github fa-lg"></i><span className='text-xl'> github</span></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className='bg-white dark:bg-[#363636] rounded-lg show'>
-                        <img className='rounded-t-lg' src={myteam} alt="" />
-                        <div className='dark:text-white p-5'>
-                            <h3 className='font-medium text-2xl mb-2'>Loyihaning nami - MyTeam</h3>
-                            <p className='font-medium text-lg mb-2'>Ushbu sayt 'Utrujja team' jamoasi haqida ma'lumot beradi. Sayt Css amaliyotda qo'llash va yaxshiroq o'rganish maqsadida test loyiha sifatida qilingan.</p>
-                            <p><span className='font-medium text-lg text-green-600'>Loyiha tuzilgan vaqti: </span>
-                                27-fevral 2023-yil
-                            </p>
-                            <p><span className='font-medium text-lg text-green-600'>Sahifa: </span>
-                                3
-                            </p>
-                            <p className='mb-5'><span className='font-medium text-lg text-green-600'>Texnologiyalar: </span>
-                                HTML, CSS
-                            </p>
-                            <div className='flex justify-between items-center'>
-                                <a target='_blank' className='inline-block' href="https://elegant-rabanadas-2f70b5.netlify.app/"><i className="fa-solid fa-link fa-lg"></i><span className='text-xl'> veb-sayt</span></a>
-                                <a target='_blank' className='inline-block' href="https://github.com/iyiy2008/myteam"><i className="fa-brands fa-github fa-lg"></i><span className='text-xl'> github</span></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className='bg-white dark:bg-[#363636] rounded-lg show'>
-                        <img className='rounded-t-lg' src={myteam} alt="" />
-                        <div className='dark:text-white p-5'>
-                            <h3 className='font-medium text-2xl mb-2'>Loyihaning nami - MyTeam</h3>
-                            <p className='font-medium text-lg mb-2'>Ushbu sayt 'Utrujja team' jamoasi haqida ma'lumot beradi. Sayt Css amaliyotda qo'llash va yaxshiroq o'rganish maqsadida test loyiha sifatida qilingan.</p>
-                            <p><span className='font-medium text-lg text-green-600'>Loyiha tuzilgan vaqti: </span>
-                                27-fevral 2023-yil
-                            </p>
-                            <p><span className='font-medium text-lg text-green-600'>Sahifa: </span>
-                                3
-                            </p>
-                            <p className='mb-5'><span className='font-medium text-lg text-green-600'>Texnologiyalar: </span>
-                                HTML, CSS
-                            </p>
-                            <div className='flex justify-between items-center'>
-                                <a target='_blank' className='inline-block' href="https://elegant-rabanadas-2f70b5.netlify.app/"><i className="fa-solid fa-link fa-lg"></i><span className='text-xl'> veb-sayt</span></a>
-                                <a target='_blank' className='inline-block' href="https://github.com/iyiy2008/myteam"><i className="fa-brands fa-github fa-lg"></i><span className='text-xl'> github</span></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className='bg-white dark:bg-[#363636] rounded-lg show'>
-                        <img className='rounded-t-lg' src={myteam} alt="" />
-                        <div className='dark:text-white p-5'>
-                            <h3 className='font-medium text-2xl mb-2'>Loyihaning nami - MyTeam</h3>
-                            <p className='font-medium text-lg mb-2'>Ushbu sayt 'Utrujja team' jamoasi haqida ma'lumot beradi. Sayt Css amaliyotda qo'llash va yaxshiroq o'rganish maqsadida test loyiha sifatida qilingan.</p>
-                            <p><span className='font-medium text-lg text-green-600'>Loyiha tuzilgan vaqti: </span>
-                                27-fevral 2023-yil
-                            </p>
-                            <p><span className='font-medium text-lg text-green-600'>Sahifa: </span>
-                                3
-                            </p>
-                            <p className='mb-5'><span className='font-medium text-lg text-green-600'>Texnologiyalar: </span>
-                                HTML, CSS
-                            </p>
-                            <div className='flex justify-between items-center'>
-                                <a target='_blank' className='inline-block' href="https://elegant-rabanadas-2f70b5.netlify.app/"><i className="fa-solid fa-link fa-lg"></i><span className='text-xl'> veb-sayt</span></a>
-                                <a target='_blank' className='inline-block' href="https://github.com/iyiy2008/myteam"><i className="fa-brands fa-github fa-lg"></i><span className='text-xl'> github</span></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className='bg-white dark:bg-[#363636] rounded-lg show'>
-                        <img className='rounded-t-lg' src={myteam} alt="" />
-                        <div className='dark:text-white p-5'>
-                            <h3 className='font-medium text-2xl mb-2'>Loyihaning nami - MyTeam</h3>
-                            <p className='font-medium text-lg mb-2'>Ushbu sayt 'Utrujja team' jamoasi haqida ma'lumot beradi. Sayt Css amaliyotda qo'llash va yaxshiroq o'rganish maqsadida test loyiha sifatida qilingan.</p>
-                            <p><span className='font-medium text-lg text-green-600'>Loyiha tuzilgan vaqti: </span>
-                                27-fevral 2023-yil
-                            </p>
-                            <p><span className='font-medium text-lg text-green-600'>Sahifa: </span>
-                                3
-                            </p>
-                            <p className='mb-5'><span className='font-medium text-lg text-green-600'>Texnologiyalar: </span>
-                                HTML, CSS
-                            </p>
-                            <div className='flex justify-between items-center'>
-                                <a target='_blank' className='inline-block' href="https://elegant-rabanadas-2f70b5.netlify.app/"><i className="fa-solid fa-link fa-lg"></i><span className='text-xl'> veb-sayt</span></a>
-                                <a target='_blank' className='inline-block' href="https://github.com/iyiy2008/myteam"><i className="fa-brands fa-github fa-lg"></i><span className='text-xl'> github</span></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className='bg-white dark:bg-[#363636] rounded-lg show'>
-                        <img className='rounded-t-lg' src={myteam} alt="" />
-                        <div className='dark:text-white p-5'>
-                            <h3 className='font-medium text-2xl mb-2'>Loyihaning nami - MyTeam</h3>
-                            <p className='font-medium text-lg mb-2'>Ushbu sayt 'Utrujja team' jamoasi haqida ma'lumot beradi. Sayt Css amaliyotda qo'llash va yaxshiroq o'rganish maqsadida test loyiha sifatida qilingan.</p>
-                            <p><span className='font-medium text-lg text-green-600'>Loyiha tuzilgan vaqti: </span>
-                                27-fevral 2023-yil
-                            </p>
-                            <p><span className='font-medium text-lg text-green-600'>Sahifa: </span>
-                                3
-                            </p>
-                            <p className='mb-5'><span className='font-medium text-lg text-green-600'>Texnologiyalar: </span>
-                                HTML, CSS
-                            </p>
-                            <div className='flex justify-between items-center'>
-                                <a target='_blank' className='inline-block' href="https://elegant-rabanadas-2f70b5.netlify.app/"><i className="fa-solid fa-link fa-lg"></i><span className='text-xl'> veb-sayt</span></a>
-                                <a target='_blank' className='inline-block' href="https://github.com/iyiy2008/myteam"><i className="fa-brands fa-github fa-lg"></i><span className='text-xl'> github</span></a>
-                            </div>
-                        </div>
-                    </li>
+                    {
+                        loyihalar.map((e) => {
+                            return (
+                                <li key={e.id} className='flex flex-col bg-white dark:bg-[#363636] rounded-lg show'>
+                                    <img className='grow rounded-t-lg' src={e.img} alt="" />
+                                    <div className='dark:text-white p-5'>
+                                        <h3 className='font-semibold text-2xl brend mb-2'>Loyihaning nomi - <span className='font-medium dark:text-white text-black'>{e.title}</span></h3>
+                                        <p className='font-medium text-lg mb-2'>{e.text}</p>
+                                        <p className='font-medium text-lg brend'>
+                                            <span className='mr-2'>Loyiha tuzilgan vaqti:</span>
+                                            <span className='font-normal text-base text-black dark:text-white'>
+                                                {e.vaqti}
+                                            </span>
+                                        </p>
+                                        <p className='font-medium text-lg brend'>
+                                            <span className='mr-2'>Sahifa:</span>
+                                            <span className='font-normal text-base text-black dark:text-white'>
+                                                {e.sahifasoni}
+                                            </span>
+                                        </p>
+                                        <p className='font-medium text-lg brend'>
+                                            <span className='mr-2'>Texnologiyalar:</span>
+                                            <span className='font-normal text-base text-black dark:text-white'>
+                                                {e.texnalogiya}
+                                            </span>
+                                        </p>
+                                        <div className='flex justify-between items-center'>
+                                            <a target='_blank' className='inline-block' href="https://elegant-rabanadas-2f70b5.netlify.app/"><i className="fa-solid fa-link fa-lg"></i><span className='text-xl'> veb-sayt</span></a>
+                                            <a target='_blank' className='inline-block' href="https://github.com/iyiy2008/myteam"><i className="fa-brands fa-github fa-lg"></i><span className='text-xl'> github</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            )
+                        })
+                    }
                 </ul>
             </div>
         </div>
