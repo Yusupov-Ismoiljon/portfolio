@@ -1,34 +1,50 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react'
 const Footer = () => {
 
   const [posX, setPosX] = useState(0);
   const [posY, setPosY] = useState(0);
+  const [scale, setScale] = useState(1);
 
-  document.addEventListener("mousemove", (e) => {
-    setPosX(e.pageX);
-    setPosY(e.pageY);
-  })
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setPosX(e.pageX);
+      setPosY(e.pageY);
+    };
 
+    document.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+
+  const divStyle = {
+    transform: `translateY(${posY}px) translateX(${posX}px) scale(${scale})`,
+  };
   const divStyle1 = {
-    transform: `translateY(${posY}px) translateX(${posX}px)`,
-    transition: 'transform 0.3s linear',
+    transform: `translateY(${posY + 12}px) translateX(${posX + 12}px) scale(${scale})`,
   };
+  const handleMouseDown = () => {
+    setScale(2);
+  }
+  const handleMouseUp = () => {
+    setScale(1)
+  }
 
-  const divStyle2 = {
-    transform: `translateY(${posY}px) translateX(${posX}px)`,
-    transition: 'transform 0.5s linear',
-  };
+  useEffect(() => {
+    document.querySelectorAll('li, a, .kun').forEach((e) => {
+      e.classList.add('z-40')
+      e.addEventListener("mouseenter", handleMouseDown);
 
-  const divStyle3 = {
-    transform: `translateY(${posY}px) translateX(${posX}px)`,
-    transition: 'transform 0.7s linear',
-  };
+      e.addEventListener("mouseleave", handleMouseUp);
 
-  
+    });
+    document.querySelectorAll('.logo-rasm')
+  }, []);
 
   return (
-    <div className='dark:bg-black'>
+    <div className=' dark:bg-black'>
       <div className='w-full max-w-[1440px] px-5 mx-auto py-20'>
         <div className='flex items-center justify-between mb-20'>
           <div className='flex items-center'>
@@ -39,11 +55,11 @@ const Footer = () => {
           <div className='flex items-center md:gap-10 sm:gap-5 gap-2'>
             <a className='text-lg dark:text-white' href="tel:+998932598079">
               <i className="fa-solid fa-phone fa-lg lg:hidden inline-block"></i>
-              <span className='lg:block hover dark-hover dark:text-white hidden transition duration-300'>+998 93 259 80 79</span>
+              <span className='lg:block  dark:text-white hidden transition duration-300'>+998 93 259 80 79</span>
             </a>
-            <a target='_blank' className='text-lg' href="mailo:yusupovismoiljon1204@gmail.com">
+            <a target='_blank' className='text-lg' href="mailto:yusupovismoiljon1204@gmail">
               <i className="fa-solid fa-envelope fa-lg lg:hidden inline-block"></i>
-              <span className='hover dark-hover dark:text-white lg:inline-block hidden transition duration-300'>yusupovismoiljon1204@gmail</span>
+              <span className='dark:text-white lg:inline-block hidden transition duration-300'>yusupovismoiljon1204@gmail</span>
             </a>
             <div className='flex gap-5'>
               <a target='_blank' href="https://github.com/iyiy2008">
@@ -59,28 +75,31 @@ const Footer = () => {
           <nav className='inline-block '>
             <ul className='md:flex items-center gap-5'>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover transition-all duration-300' href="#uy">Uy</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  transition-all duration-300' href="#uy">Uy</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover transition duration-300' href="#ha">Haqida</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  transition duration-300' href="#ha">Haqida</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover transition duration-300' href="#te">Texnologa</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  transition duration-300' href="#te">Texnologiya</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover transition duration-300' href="#lo">Loyihalar</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  transition duration-300' href="#lo">Loyihalar</a>
               </li>
             </ul>
           </nav>
 
         </div>
       </div>
+      <div style={divStyle} className='a w-7 h-7 circle-shape-style absolute top-0 flex justify-center items-center z-10 rounded-full'>
 
-      <div style={divStyle1} className="circle-shape-style1 w-7 h-7 rounded-full border-2 border-deep-orange-500 absolute top-0"></div>
-      <div style={divStyle2} className="circle-shape-style2 w-7 h-7 rounded-full border-2 border-deep-orange-500 absolute top-0"></div>
-      <div style={divStyle3} className="circle-shape-style3 w-7 h-7 rounded-full border-2 border-deep-orange-500 absolute top-0"></div>
+      </div>
+        <div style={divStyle1} className='absolute top-0 w-1 h-1 rounded-full dark:bg-[#fff]'>
+
+        </div>
+
     </div>
   )
 }
 
-export default Footer
+export default Footer;
