@@ -94,7 +94,7 @@ const Footer = () => {
       <div style={divStyle} className='a w-7 h-7 circle-shape-style absolute top-0 flex justify-center items-center z-10 rounded-full'>
 
       </div>
-        <div style={divStyle1} className='absolute top-0 w-1 h-1 rounded-full dark:bg-[#fff]'>
+        <div style={divStyle1} className='absolute top-0 w-1 h-1 rounded-full bg-white dark:bg-[#fff]'>
 
         </div>
 
