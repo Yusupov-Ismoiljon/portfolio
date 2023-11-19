@@ -9,6 +9,7 @@
 
   body {
       font-family: 'DM Sans', sans-serif;
+      overflow-x: hidden;
   }
 
   .hero-responsive {
@@ -32,17 +33,7 @@
       color: #0ef;
   }
 
-  @media (hover: hover) {
-      .hover {
-          @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-[#00C0FD] hover:to-[#E70FAA];
-      }
-  }
 
-  @media (hover: hover) {
-      .dark-hover {
-          @apply dark:hover:bg-clip-text dark:hover:text-transparent dark:hover:bg-gradient-to-r dark:hover:from-[#00C0FD] dark:hover:to-[#E70FAA];
-      }
-  }
 
   .li-img {
       @apply bg-gradient-to-r from-[#00C0FD] to-[#E70FAA];
@@ -61,17 +52,12 @@
       @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00C0FD] to-[#E70FAA]
   }
 
-  .circle-shape-style1 {
+  .circle-shape-style {
       border: 2px solid #00eeff;
-      z-index: 1;
   }
-
-  .circle-shape-style2 {
-      border: 2px solid #00ff88;
-      z-index: 1;
-  }
-
-  .circle-shape-style3 {
-      border: 2px solid #aa00ff;
-      z-index: 1;
+.a{
+    transition: transform 0.15s linear;
+}
+  * {
+      cursor: none !important;
   }

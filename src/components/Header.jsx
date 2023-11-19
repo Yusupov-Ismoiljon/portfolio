@@ -23,7 +23,7 @@ const Header = () => {
     setDark(dark === 'dark' ? 'light' : 'dark');
   };
   return (
-    <div id='uy' className='py-20'>
+    <div id='uy' className='py-10'>
       <div className='w-full max-w-[1440px] mx-auto px-5'>
         <div className='flex justify-between items-center'>
           <a className='font-bold md:text-3xl text-2xl text-[#42446E] dark:text-white' href='#uy'>
@@ -32,30 +32,30 @@ const Header = () => {
           <nav className='lg:inline-block hidden'>
             <ul className='flex items-center gap-10'>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#uy">Uy</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#uy">Uy</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#ha">Haqida</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#ha">Haqida</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#te">Texnologa</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#te">Texnologiya</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#lo">Loyihalar</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#lo">Loyihalar</a>
               </li>
             </ul>
           </nav>
           <div className='flex items-center dark:text-white gap-5'>
-            <a target='_blank' href='https://github.com/iyiy2008' className='inline-block text-black  dark:text-white'><i className="fa-brands fa-github fa-xl"></i></a>
+            <a target='_blank' href='https://github.com/iyiy2008' className='inline-block text-black dark:text-white'><i className="fa-brands fa-github fa-xl"></i></a>
             <a target='_blank' href='https://t.me/Ismoiljon_12_04' className='inline-block text-black dark:text-white'><i className="fa-brands fa-telegram fa-xl"></i></a>
-            <button onClick={addDark}>
-              <img className='w-8 h-8' src={dark === 'light' ? kun : tun} alt="" />
+            <button className='kun' onClick={addDark}>
+              <img className='w-6 h-6' src={dark === 'light' ? kun : tun} alt="" />
             </button>
-            <button onClick={() => setMenu(!menu)}>
+            <button className='kun' onClick={() => setMenu(!menu)}>
               <i className="fa-solid fa-bars lg:hidden inline-block fa-xl"></i>
             </button>
             <div className='lg:hidden block'>
-              {menu &&
+              {menu &&  
                 <nav className='fixed w-full h-full top-0 right-0 bg-white dark:bg-black'>
                   <div className='relative'>
                     <button className='absolute top-9  right-5' onClick={() => setMenu(!menu)}>
@@ -63,16 +63,16 @@ const Header = () => {
                     </button>
                     <ul onClick={() => setMenu(!menu)} className='flex flex-col gap-10 absolute left-10 top-14'>
                       <li>
-                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#uy">Uy</a>
+                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#uy">Uy</a>
                       </li>
                       <li>
-                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#ha">Haqida</a>
+                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#ha">Haqida</a>
                       </li>
                       <li>
-                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#te">Texnologa</a>
+                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#te">Texnologiya</a>
                       </li>
                       <li>
-                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6 hover dark-hover duration-300' href="#lo">Loyihalar</a>
+                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#lo">Loyihalar</a>
                       </li>
                     </ul>
                   </div>
