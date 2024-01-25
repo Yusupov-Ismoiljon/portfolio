@@ -51,13 +51,3 @@
   .brend {
       @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00C0FD] to-[#E70FAA]
   }
-
-  .circle-shape-style {
-      border: 2px solid #00eeff;
-  }
-.a{
-    transition: transform 0.15s linear;
-}
-  * {
-      cursor: none !important;
-  }

@@ -1,48 +1,6 @@
 import React, { useState, useEffect } from 'react'
 const Footer = () => {
 
-  const [posX, setPosX] = useState(0);
-  const [posY, setPosY] = useState(0);
-  const [scale, setScale] = useState(1);
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosX(e.pageX);
-      setPosY(e.pageY);
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-
-  const divStyle = {
-    transform: `translateY(${posY}px) translateX(${posX}px) scale(${scale})`,
-  };
-  const divStyle1 = {
-    transform: `translateY(${posY + 12}px) translateX(${posX + 12}px) scale(${scale})`,
-  };
-  const handleMouseDown = () => {
-    setScale(2);
-  }
-  const handleMouseUp = () => {
-    setScale(1)
-  }
-
-  useEffect(() => {
-    document.querySelectorAll('li, a, .kun').forEach((e) => {
-      e.classList.add('z-40')
-      e.addEventListener("mouseenter", handleMouseDown);
-
-      e.addEventListener("mouseleave", handleMouseUp);
-
-    });
-    document.querySelectorAll('.logo-rasm')
-  }, []);
-
   return (
     <div className=' dark:bg-black'>
       <div className='w-full max-w-[1440px] px-5 mx-auto py-20'>
@@ -91,13 +49,6 @@ const Footer = () => {
 
         </div>
       </div>
-      <div style={divStyle} className='a w-7 h-7 circle-shape-style absolute top-0 flex justify-center items-center z-10 rounded-full'>
-
-      </div>
-        <div style={divStyle1} className='absolute top-0 w-1 h-1 rounded-full bg-white dark:bg-[#fff]'>
-
-        </div>
-
     </div>
   )
 }
