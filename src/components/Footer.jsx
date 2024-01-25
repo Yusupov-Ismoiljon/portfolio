@@ -20,12 +20,8 @@ const Footer = () => {
               <span className='dark:text-white lg:inline-block hidden transition duration-300'>yusupovismoiljon1204@gmail</span>
             </a>
             <div className='flex gap-5'>
-              <a target='_blank' href="https://github.com/iyiy2008">
-                <i className="fa-brands fa-github fa-xl dark:text-white"></i>
-              </a>
-              <a href="https://github.com/iyiy2008">
-                <i className="fa-brands fa-telegram fa-xl dark:text-white"></i>
-              </a>
+              <a target='_blank' href='https://github.com/Yusupov-Ismoiljon' className='inline-block text-black dark:text-white'><i className="fa-brands fa-github fa-xl"></i></a>
+              <a target='_blank' href='https://t.me/Ismoiljon_Developer' class='inline-block text-black dark:text-white'><i class="fa-brands fa-telegram fa-xl"></i></a>
             </div>
           </div>
         </div>

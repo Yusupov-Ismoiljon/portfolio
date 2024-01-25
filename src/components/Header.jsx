@@ -46,8 +46,8 @@ const Header = () => {
             </ul>
           </nav>
           <div className='flex items-center dark:text-white gap-5'>
-            <a target='_blank' href='https://github.com/iyiy2008' className='inline-block text-black dark:text-white'><i className="fa-brands fa-github fa-xl"></i></a>
-            <a target='_blank' href='https://t.me/Ismoiljon_12_04' className='inline-block text-black dark:text-white'><i className="fa-brands fa-telegram fa-xl"></i></a>
+            <a target='_blank' href='https://github.com/Yusupov-Ismoiljon' className='inline-block text-black dark:text-white'><i className="fa-brands fa-github fa-xl"></i></a>
+            <a target='_blank' href='https://t.me/Ismoiljon_Developer' class='inline-block text-black dark:text-white'><i class="fa-brands fa-telegram fa-xl"></i></a>
             <button className='kun' onClick={addDark}>
               <img className='w-6 h-6' src={dark === 'light' ? kun : tun} alt="" />
             </button>
@@ -55,7 +55,7 @@ const Header = () => {
               <i className="fa-solid fa-bars lg:hidden inline-block fa-xl"></i>
             </button>
             <div className='lg:hidden block'>
-              {menu &&  
+              {menu &&
                 <nav className='fixed w-full h-full top-0 right-0 bg-white dark:bg-black'>
                   <div className='relative'>
                     <button className='absolute top-9  right-5' onClick={() => setMenu(!menu)}>
