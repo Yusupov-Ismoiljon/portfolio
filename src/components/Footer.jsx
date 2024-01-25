@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='flex items-center justify-between mb-20'>
           <div className='flex items-center'>
             <a className='font-bold md:text-3xl text-2xl text-[#42446E] dark:text-white' href='#uy'>
-              <b>Ismoiljon</b>
+              <b>Yusupov</b>
             </a>
           </div>
           <div className='flex items-center md:gap-10 sm:gap-5 gap-2'>
@@ -20,8 +20,12 @@ const Footer = () => {
               <span className='dark:text-white lg:inline-block hidden transition duration-300'>yusupovismoiljon1204@gmail</span>
             </a>
             <div className='flex gap-5'>
-              <a target='_blank' href='https://github.com/Yusupov-Ismoiljon' className='inline-block text-black dark:text-white'><i className="fa-brands fa-github fa-xl"></i></a>
-              <a target='_blank' href='https://t.me/Ismoiljon_Developer' class='inline-block text-black dark:text-white'><i class="fa-brands fa-telegram fa-xl"></i></a>
+              <a target='_blank' href="https://github.com/iyiy2008">
+                <i className="fa-brands fa-github fa-xl dark:text-white"></i>
+              </a>
+              <a href="https://github.com/iyiy2008">
+                <i className="fa-brands fa-telegram fa-xl dark:text-white"></i>
+              </a>
             </div>
           </div>
         </div>

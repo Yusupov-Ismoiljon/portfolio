@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import tun from '../img/tun-chirogi.png';
 import kun from '../img/day.png';
+import github from '../img/github.svg';
+import githubDark from '../img/github-dark.svg';
+import telegram from '../img/telegram.svg';
+import telegramDark from '../img/telegram-dark.svg';
 
 
 const Header = () => {
@@ -27,7 +31,7 @@ const Header = () => {
       <div className='w-full max-w-[1440px] mx-auto px-5'>
         <div className='flex justify-between items-center'>
           <a className='font-bold md:text-3xl text-2xl text-[#42446E] dark:text-white' href='#uy'>
-            <b>Ismoiljon </b>
+            <b>Yusupov</b>
           </a>
           <nav className='lg:inline-block hidden'>
             <ul className='flex items-center gap-10'>
@@ -46,10 +50,16 @@ const Header = () => {
             </ul>
           </nav>
           <div className='flex items-center dark:text-white gap-5'>
-            <a target='_blank' href='https://github.com/Yusupov-Ismoiljon' className='inline-block text-black dark:text-white'><i className="fa-brands fa-github fa-xl"></i></a>
-            <a target='_blank' href='https://t.me/Ismoiljon_Developer' class='inline-block text-black dark:text-white'><i class="fa-brands fa-telegram fa-xl"></i></a>
-            <button className='kun' onClick={addDark}>
-              <img className='w-6 h-6' src={dark === 'light' ? kun : tun} alt="" />
+
+            <a target='_blank' href='https://github.com/Yusupov-Ismoiljon' className='inline-block text-black dark:text-white'>
+              <img className='w-6 h-6' src={dark === 'light' ? github : githubDark} alt="github" />
+            </a>
+
+            <a target='_blank' href='https://t.me/Ismoiljon_Developer' class='inline-block text-black dark:text-white'>
+            <img className='w-9 h-9' src={dark === 'light' ? telegram : telegramDark} alt="telegram" />
+            </a>
+            <button className='kun w-6 h-6' onClick={addDark}>
+              <img src={dark === 'light' ? kun : tun} alt="" />
             </button>
             <button className='kun' onClick={() => setMenu(!menu)}>
               <i className="fa-solid fa-bars lg:hidden inline-block fa-xl"></i>
