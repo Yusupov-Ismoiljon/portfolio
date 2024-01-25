@@ -15,33 +15,33 @@ const Texnologik = () => {
             <h2 id='te' className='font-bold text-2xl md:text-5xl leading-6 text-[#42446E] dark:text-white text-center mb-5 md:mb-10'>Texnologiya</h2>
             <p className='font-normal text-base leading-6 text-[#666] dark:text-[#A7A7A7] text-center md:text-xl mb-16 md:mb-28'>Men bilgan va foydalangan texnologiyalar</p>
             <ul className='flex items-center justify-center flex-wrap gap-20'>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
+                <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
                     <img className='w-28' src={html5} alt="html5" />
-                </ol>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
+                </li>
+                <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
                     <img className='w-28' src={css3} alt="css3" />
-                </ol>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
+                </li>
+                <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
                     <img className='w-28' src={bootstrap} alt="bootstrap" />
-                </ol>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
+                </li>
+                <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
                     <img className='w-28' src={tailwindcss} alt="tailwindcss" />
-                </ol>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
+                </li>
+                <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
                     <img className='w-28' src={js} alt="js" />
-                </ol>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
+                </li>
+                <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
                     <img className='w-28' src={react} alt="react" />
-                </ol>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
+                </li>
+                <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
                     <img className='w-28' src={redux} alt="redux" />
-                </ol>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center items-center li-img rounded-full show'>
+                </li>
+                <li className='w-[166px] h-[166px] flex justify-center text-center items-center li-img rounded-full show'>
                     <img className='w-[140px] h-[140px]' src={git} alt="" />
-                </ol>
-                <ol className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
+                </li>
+                <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
                     <img className='w-28' src={github} alt="git hub" />
-                </ol>
+                </li>
             </ul>
         </div>
     )
