@@ -14,7 +14,7 @@ const Projects = () => {
                     {
                         loyihalar.map((e) => {
                             return (
-                                <ol key={e.id} className='flex flex-col bg-white dark:bg-[#363636] rounded-lg show'>
+                                <li key={e.id} className='flex flex-col bg-white dark:bg-[#363636] rounded-lg show'>
                                     <img className='grow rounded-t-lg' src={e.img} alt="" />
                                     <div className='flex flex-col gap-2 dark:text-white p-5'>
                                         <h3 className='font-semibold text-2xl brend mb-2'>Loyihaning nomi - <span className='font-medium dark:text-white text-black'>{e.title}</span></h3>
@@ -42,7 +42,7 @@ const Projects = () => {
                                             <a target='_blank' className='inline-block' href="https://github.com/iyiy2008/Akstar"><i className="fa-brands fa-github fa-lg"></i><span className='text-xl'> github</span></a>
                                         </div>
                                     </div>
-                                </ol>
+                                </li>
                             )
                         })
                     }
