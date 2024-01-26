@@ -51,18 +51,15 @@ const Header = () => {
           </nav>
           <div className='flex items-center dark:text-white gap-5'>
 
-            <a target='_blank' href='https://github.com/Yusupov-Ismoiljon' className='inline-block text-black dark:text-white'>
-              <img className='w-6 h-6' src={dark === 'light' ? github : githubDark} alt="github" />
+            <a target='_blank' href='https://github.com/Yusupov-Ismoiljon' className='text-black dark:text-white'>
+              <img src={dark === 'light' ? github : githubDark} alt="github" />
             </a>
 
-            <a target='_blank' href='https://t.me/Ismoiljon_Developer' class='inline-block text-black dark:text-white'>
-            <img className='w-9 h-9' src={dark === 'light' ? telegram : telegramDark} alt="telegram" />
+            <a target='_blank' href='https://t.me/Ismoiljon_Developer' class='text-black dark:text-white'>
+              <i class="fa-brands fa-telegram fa-xl"></i>
             </a>
             <button className='kun w-6 h-6' onClick={addDark}>
-              <img src={dark === 'light' ? kun : tun} alt="" />
-            </button>
-            <button className='kun' onClick={() => setMenu(!menu)}>
-              <i className="fa-solid fa-bars lg:hidden inline-block fa-xl"></i>
+              <img src={dark === 'light' ? kun : tun} alt="kun tun" />
             </button>
             <div className='lg:hidden block'>
               {menu &&
