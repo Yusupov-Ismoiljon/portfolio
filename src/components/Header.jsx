@@ -4,8 +4,6 @@ import tun from '../img/tun-chirogi.png';
 import kun from '../img/day.png';
 import github from '../img/github.svg';
 import githubDark from '../img/github-dark.svg';
-import telegram from '../img/telegram.svg';
-import telegramDark from '../img/telegram-dark.svg';
 
 
 const Header = () => {
