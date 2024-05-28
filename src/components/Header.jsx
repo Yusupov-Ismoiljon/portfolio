@@ -2,14 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import tun from '../img/tun-chirogi.png';
 import kun from '../img/day.png';
-import github from '../img/github.svg';
-import githubDark from '../img/github-dark.svg';
+import SocialIcons from './SocialIcons';
 
 
 const Header = () => {
   const darkMode = localStorage.getItem('dark');
   const [dark, setDark] = useState(darkMode || 'light');
-  const [menu, setMenu] = useState(false)
 
   useEffect(() => {
     localStorage.setItem("dark", dark);
@@ -37,53 +35,23 @@ const Header = () => {
                 <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#uy">Uy</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#ha">Haqida</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#haqida">Haqida</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#te">Texnologiya</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#texnologiya">Texnologiya</a>
               </li>
               <li>
-                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#lo">Loyihalar</a>
+                <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#loyihalar">Loyihalar</a>
               </li>
             </ul>
           </nav>
-          <div className='flex items-center dark:text-white gap-5'>
-
-            <a target='_blank' href='https://github.com/Yusupov-Ismoiljon' className='text-black dark:text-white'>
-              <img src={dark === 'light' ? github : githubDark} alt="github" />
-            </a>
-
-            <a target='_blank' href='https://t.me/Ismoiljon_Developer' class='text-black dark:text-white'>
-              <i class="fa-brands fa-telegram fa-xl"></i>
-            </a>
+          <div className='flex items-center justify-center gap-5'>
+              <div>
+                <SocialIcons/>
+              </div>
             <button className='kun w-6 h-6' onClick={addDark}>
               <img src={dark === 'light' ? kun : tun} alt="kun tun" />
             </button>
-            <div className='lg:hidden block'>
-              {menu &&
-                <nav className='fixed w-full h-full top-0 right-0 bg-white dark:bg-black'>
-                  <div className='relative'>
-                    <button className='absolute top-9  right-5' onClick={() => setMenu(!menu)}>
-                      <i className="fa-solid fa-xmark fa-2xl" style={{ 'color': '#ff0000' }}></i>
-                    </button>
-                    <ul onClick={() => setMenu(!menu)} className='flex flex-col gap-10 absolute left-10 top-14'>
-                      <li>
-                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#uy">Uy</a>
-                      </li>
-                      <li>
-                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#ha">Haqida</a>
-                      </li>
-                      <li>
-                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#te">Texnologiya</a>
-                      </li>
-                      <li>
-                        <a className='font-medium text-xl nav-link-color dark:text-white leading-6  duration-300' href="#lo">Loyihalar</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              }
-            </div>
           </div>
         </div>
       </div>

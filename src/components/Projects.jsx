@@ -5,7 +5,7 @@ import { loyihalar } from '../data';
 const Projects = () => {
     return (
         <div className='pt-20'>
-            <div id='lo' className='w-full max-w-[1440px] mx-auto px-5'>
+            <div id='loyihalar' className='w-full max-w-[1440px] mx-auto px-5'>
                 <div className='mb-20'>
                     <h2 className='font-bold text-2xl md:text-5xl leading-6 text-[#42446E] dark:text-white text-center mb-5 md:mb-10'>Loyihalar</h2>
                     <p className='font-normal text-base leading-6 text-[#666] dark:text-[#A7A7A7] text-center md:text-xl mb-16 md:mb-28'>Men hazircha qilngan veb-saytlar</p>
