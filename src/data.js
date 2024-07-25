@@ -1,5 +1,3 @@
-import myteamimg from './img/myteam.png';
-import apteka from './img/apteka.png';
 import akstar from './img/akstar.png';
 export const loyihalar = [
     {
