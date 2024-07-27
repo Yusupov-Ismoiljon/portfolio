@@ -14,7 +14,7 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <h2 className='font-bold text-2xl md:text-4xl lg:text-5xl leading-6 md:leading-10 lg:leading-[60px] text-[hsl(45,100%,72%)]'>Salom 👋,<br />
+          <h2 className='font-bold text-3xlmd:text-4xl lg:text-5xl leading-6 md:leading-10 lg:leading-[60px] text-[hsl(45,100%,72%)]'>Salom 👋,<br />
             Mening ismim <br />
             <span className='hero-title'>
               Yusupov Ismoiljon

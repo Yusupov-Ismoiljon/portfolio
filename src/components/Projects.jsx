@@ -7,17 +7,17 @@ const Projects = () => {
         <div className='pt-20'>
             <div id='loyihalar' className='w-full max-w-[1440px] mx-auto px-5'>
                 <div className='mb-20'>
-                    <h2 className='font-bold text-2xl md:text-5xl leading-6 text-[hsl(45,100%,72%)] text-center mb-2'>Loyihalar</h2>
+                    <h2 className='font-bold text-4xl md:text-5xl leading-6 text-[hsl(45,100%,72%)] text-center mb-2'>Loyihalar</h2>
                     <p className='font-normal text-base leading-6  text-[hsl(45,100%,72%)] text-center md:text-xl mb-10 md:mb-20'>Men hozirgacha yaratgan veb-saytlar</p>
                 </div>
                 <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                     {
                         loyihalar.map((e) => {
                             return (
-                                <li key={e.id} className='flex flex-col bg-black rounded-lg show'>
+                                <li key={e.id} className='flex flex-col bg-black rounded-lg '>
                                     <img className='grow rounded-t-lg' src={e.img} alt="" />
                                     <div className='flex flex-col gap-2 text-[hsl(45,100%,72%)] p-5'>
-                                        <h3 className='font-semibold text-2xl brend mb-2'>Loyihaning nomi - <span className='font-medium text-[hsl(45,100%,72%)]'>{e.title}</span></h3>
+                                        <h3 className='font-semibold text-3xlbrend mb-2'>Loyihaning nomi - <span className='font-medium text-[hsl(45,100%,72%)]'>{e.title}</span></h3>
                                         <p className='font-medium text-lg mb-2'>{e.text}</p>
                                         <p className='font-medium text-lg brend'>
                                             <span className='mr-2'>Loyiha tuzilgan vaqti:</span>

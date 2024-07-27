@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='w-full max-w-[1440px] px-5 mx-auto'>
         <div className='flex items-center justify-between mb-20'>
           <div className='flex items-center'>
-            <a className='font-bold md:text-3xl text-2xl  text-[hsl(45,100%,72%)] ' href='#uy'>
+            <a className='font-bold text-4xl text-[hsl(45,100%,72%)] ' href='#uy'>
               <b>Yusupov.</b>
             </a>
           </div>

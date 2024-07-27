@@ -11,7 +11,7 @@ import github from '../img/github.svg';
 const Texnologik = () => {
     return (
         <div className='w-full max-w-[1440px] mx-auto px-5 py-20'>
-            <h2 id='texnologiya' className='font-bold text-2xl md:text-5xl leading-6 text-[hsl(45,100%,72%)] text-center mb-2'>Texnologiya</h2>
+            <h2 id='texnologiya' className='font-bold text-4xl md:text-5xl leading-6 text-[hsl(45,100%,72%)] text-center mb-2'>Texnologiya</h2>
             <p className='font-normal text-base leading-6  text-[hsl(45,100%,72%)] text-center md:text-xl mb-10 md:mb-20'>Men bilgan va foydalangan texnologiyalar</p>
             <ul className='flex items-center justify-center flex-wrap gap-20'>
                 <li className='w-[166px] h-[166px] flex justify-center text-center li-img rounded-full show'>
