@@ -32,7 +32,7 @@ const Header = () => {
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
           <div
-            className={`fixed -top-0 right-0 w-full h-screen lg:hidden bg-black transition-transform duration-700 ease-in-out  py-[35px] px-5 ${isOpen ? 'transform translate-x-0' : 'transform translate-x-full'
+            className={`fixed -top-0 right-0 w-full h-screen lg:hidden bg-black transition-transform duration-700 ease-in-out py-[35px] px-5 ${isOpen ? 'transform translate-x-0' : 'transform translate-x-full'
               }`}
           >
             <div className='flex justify-between items-center'>
@@ -44,17 +44,16 @@ const Header = () => {
               </div>
             </div>
             <nav className='mt-10'>
-              <ul className='flex flex-col gap-5 text-[hsl(45,100%,72%)]'>
-                <li>
+              <ul className='flex justify-between gap-5 text-[hsl(45,100%,72%)]'> <li onClick={() => setOpen(!isOpen)}>
                   <a className='font-medium text-xl leading-6 duration-300' href="#uy">Uy</a>
                 </li>
-                <li>
+                <li onClick={() => setOpen(!isOpen)}>
                   <a className='font-medium text-xl leading-6 duration-300' href="#haqida">Haqida</a>
                 </li>
-                <li>
+                <li onClick={() => setOpen(!isOpen)}>
                   <a className='font-medium text-xl leading-6 duration-300' href="#texnologiya">Texnologiya</a>
                 </li>
-                <li>
+                <li onClick={() => setOpen(!isOpen)}>
                   <a className='font-medium text-xl leading-6 duration-300' href="#loyihalar">Loyihalar</a>
                 </li>
               </ul>

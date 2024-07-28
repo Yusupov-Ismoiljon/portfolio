@@ -16,9 +16,9 @@ const Projects = () => {
                             return (
                                 <li key={e.id} className='flex flex-col bg-black rounded-lg '>
                                     <img className='grow rounded-t-lg' src={e.img} alt="" />
-                                    <div className='flex flex-col gap-2 text-[hsl(45,100%,72%)] p-5'>
-                                        <h3 className='font-semibold text-3xlbrend mb-2'>Loyihaning nomi - <span className='font-medium text-[hsl(45,100%,72%)]'>{e.title}</span></h3>
-                                        <p className='font-medium text-lg mb-2'>{e.text}</p>
+                                    <div className='flex flex-col gap-2 brend p-5'>
+                                        <h3 className='font-semibold text-2xl mb-2'>Loyihaning nomi - <span className='font-medium text-[hsl(45,100%,72%)]'>{e.title}</span></h3>
+                                        <p className='font-medium text-lg text-[hsl(45,100%,72%)] mb-2'>{e.text}</p>
                                         <p className='font-medium text-lg brend'>
                                             <span className='mr-2'>Loyiha tuzilgan vaqti:</span>
                                             <span className='font-normal text-base text-[hsl(45,100%,72%)]'>

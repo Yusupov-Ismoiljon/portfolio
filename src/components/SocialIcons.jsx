@@ -12,14 +12,10 @@ const SocialIcons = () => {
                 <span className="tooltip">Github</span>
                 <i className="fa-brands fa-lg fa-github"></i>
             </a>
-            <a className="icon instagram">
-                <span className="tooltip">Instagram</span>
-                <i className="fa-brands fa-lg fa-instagram"></i>
-            </a>
-            <li target='_blank' href="tel:+998932598079" className="icon phone">
+            <a href="tel:+998932598079" target="_blank" className="icon phone">
                 <span className="tooltip">Phone</span>
                 <i className="fa-solid fa-lg fa-phone"></i>
-            </li>
+            </a>
         </div>
     );
 };
