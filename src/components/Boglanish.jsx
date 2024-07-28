@@ -126,7 +126,7 @@ const Boglanish = () => {
 
   return (
     <div className='w-full max-w-[1440px] px-5 mx-auto py-20 text-[hsl(45,100%,72%)]'>
-      <h2 className='font-bold text-4xl md:text-5xl leading-6 text-center mb-2'>Bog'lanish</h2>
+      <h2 id='boglanish' className='font-bold text-4xl md:text-5xl leading-6 text-center mb-2'>Bog'lanish</h2>
       <p className='font-normal leading-6 text-center text-lg md:text-xl mb-10 md:mb-20'>Men bilan bog'lanish uchun</p>
       <form className='w-full flex flex-col items-center justify-center' onSubmit={handleSubmit}>
         <div className='w-full grid md:grid-cols-2 grid-cols-1 gap-5 pb-5'>

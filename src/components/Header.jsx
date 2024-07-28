@@ -26,6 +26,9 @@ const Header = () => {
               <li>
                 <a className='font-medium text-xl leading-6 duration-300' href="#loyihalar">Loyihalar</a>
               </li>
+              <li onClick={() => setOpen(!isOpen)}>
+                  <a className='font-medium text-xl leading-6 duration-300' href="#boglanish">Bog'lanish</a>
+                </li>
             </ul>
           </nav>
           <div className='text-[hsl(45,100%,72%)] lg:hidden inline-block shaw'>
@@ -44,7 +47,7 @@ const Header = () => {
               </div>
             </div>
             <nav className='mt-10'>
-              <ul className='flex justify-between gap-5 text-[hsl(45,100%,72%)]'> <li onClick={() => setOpen(!isOpen)}>
+              <ul className='flex flex-col gap-5 text-[hsl(45,100%,72%)]'> <li onClick={() => setOpen(!isOpen)}>
                   <a className='font-medium text-xl leading-6 duration-300' href="#uy">Uy</a>
                 </li>
                 <li onClick={() => setOpen(!isOpen)}>
@@ -55,6 +58,9 @@ const Header = () => {
                 </li>
                 <li onClick={() => setOpen(!isOpen)}>
                   <a className='font-medium text-xl leading-6 duration-300' href="#loyihalar">Loyihalar</a>
+                </li>
+                <li onClick={() => setOpen(!isOpen)}>
+                  <a className='font-medium text-xl leading-6 duration-300' href="#boglanish">Bog'lanish</a>
                 </li>
               </ul>
             </nav>
